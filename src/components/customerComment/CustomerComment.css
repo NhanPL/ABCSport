@@ -1,0 +1,13 @@
+.customer-comment {
+    color: white;
+}
+
+.customer-comment-content, .customer-comment-role {
+    font-size: 18px;
+}
+
+.customer-comment-name {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 31px;
+}

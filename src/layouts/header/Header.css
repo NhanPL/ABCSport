@@ -1,0 +1,147 @@
+.header-top {
+    background-color: #FA5A0A;
+    height: 116px;
+    padding-left: 200px;
+    padding-right: 183px;
+    flex-wrap: nowrap !important;
+}
+
+.header-top img {
+    width: 147px;
+    height: 49px;
+}
+
+.header-form {
+    position: relative;
+}
+
+.header-form .btn-search {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header-form input{
+    height: 60px;
+    padding-right: 60px;
+    font-size: 16px;
+}
+
+.header-top .btn-toggle {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    display: none;
+}
+
+.header-top .btn-cart {
+    width: 36px;
+    height: 36px;
+    background-color: hsla(0, 0%, 100%, 0.2);
+    border-radius: 50%;
+}
+
+.header-bottom {
+    padding-left: 200px;
+    padding-right: 183px;
+    background-color: black;
+    height: 56px;
+}
+
+.header-bottom .header-navbar-nav {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    gap: 30px !important;
+    list-style: none;
+    align-items: center;
+    height: 100%;
+}
+
+
+.header-bottom .header-navbar .header-navbar-item {
+    font-size: 20px;
+    color: white;
+}
+
+.header-bottom .header-navbar .header-navbar-item  a{
+    text-decoration: none;
+    text-wrap: nowrap;
+}
+
+.header-bottom .header-form{
+    display: none;
+}
+
+
+@media (max-width: 1440px) {
+    .header-top {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .header-bottom {
+        padding-left: 50px;
+        padding-right: 50px;
+        gap: 20px !important;
+    }
+    
+    .header-bottom .navbar {
+        width: 100%;
+
+    }
+
+    .header-bottom .header-navbar-nav {
+        gap: 20px !important;
+    }
+
+}
+
+  
+@media (max-width: 767px) {
+    .header-top .btn-toggle {
+        display: block;
+    }
+
+    .header-top .header-form {
+        display: none;
+    }
+
+    .header-top .header-login, .btn-cart{
+        display: none !important;
+    }
+
+    .header-bottom {
+        height: 0px;
+        transition: all 0.5s;
+        flex-direction: column;
+    }
+
+    .header-bottom .header-navbar-nav {
+        flex-wrap: wrap;
+    }
+
+    .header-bottom .header-navbar .header-navbar-item  {
+        width: 100%;
+        line-height: 56px;
+    }
+
+    .header-bottom .header-navbar-nav {
+        gap: 0px !important;
+    }
+
+    .header-bottom .header-count {
+        display: none !important;
+    }
+
+    .header-bottom .header-form {
+        display: block;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .show {
+        height: calc(6 * 56px + 50px);
+    }
+}
